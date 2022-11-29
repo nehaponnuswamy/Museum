@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-md" style="background-color:rgba(0,0,0,1)">
+            <div class="container-fluid">
+                <a class="navlogo navbar-brand" href="#">
+                    <img src="images/logos/Amuse.png" alt="ArtMuse" width="auto" height="50"/>
+                    <img src="images/logos/aamusetitle2.png" width="auto" height="50"/>
+                </a>
+                <button class="navbar-toggler" type="button" style="color:rgba(249, 238, 223,0.6)" data-bs-toggle="collapse" data-bs-target="#collapsenavbar" aria-controls="collapsenavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="navstyle nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="navstyle nav-item dropdown">
+                            <a href="" class="nav-link btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Visit</a>
+                            <ul class="dd dropdown-menu">
+                                <li><a class="ddi dropdown-item" href="contact.html">Opening Time</a></li>
+                                <li><a class="ddi dropdown-item disabled" href="#">Events</a></li>
+                                <li><a class="ddi dropdown-item" href="contact.html">Location</a></li>
+                            </ul>
+                        </li>
+                        <li class="navstyle nav-item">
+                            <a href="" class="nav-link">Exhibit</a>
+                        </li>
+                        <li class="navstyle nav-item dropdown">
+                            <a href="" class="nav-link btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
+                            <ul class="dd dropdown-menu">
+                                <li><a class="ddi dropdown-item" href="collections.html">Collections</a></li>
+                                <li><a class="ddi dropdown-item" href="artifacts.html">Artifacts</a></li>
+                                <li><a class="ddi dropdown-item" href="curatorspick.html">Curator's Pick</a> </li>
+                            </ul>
+                        </li>
+                        <li class="navstyle nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div id="infoslides" class="carousel slide container-fluid" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#infoslides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#infoslides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#infoslides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carslide carousel-item active" data-bs-interval="3000">
+                    <div class="carimg">
+                        <img src="images/carouselimg/carimg1_amy-leigh-barnard-H3APOiYLyzk-unsplash.jpg" class="cimg d-block w-100 height-auto">
+                    </div>
+                    <div class="carbtn carcap carousel-caption">
+                        <h3>Welcome To ArtMuse</h3>
+                        <p>Revisiting History And Explore Ancient Arts</p>
+                        <a href="#" type="button" role="button">Explore</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="carimg">
+                        <img src="images/carouselimg/carimg3_museumg095d836dc_1920.jpg" class="d-block w-100"/>
+                    </div>
+                    <div class="carcap carousel-caption">
+                        <h3>Check our Collections</h3>
+                        <p>From Antiques to Modern</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="carimg">
+                        <img src="images/carouselimg/carimg5_estee-janssens-MUf7Ly04sOI-unsplash.jpg" class="d-block w-100"/>
+                    </div>
+                    <div class="carcap carousel-caption">
+                        <h3>Showcase your Artworks here!!</h3>
+                        <p>Share your works and create Blogs</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#infoslides" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#infoslides" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+        <br/><br/>
+
+        <div id="aboutus" class="container w-100">
+            <h1>About ArtMuse</h1>
+            <h3 style="margin-left: 30px;background-color:antiquewhite">Art & Museum</h3>
+            <center>
+            <p class="aboutustext w-100" style="justify-content:center ">Art and Museum together at one place. This place brings a feeling of patriotism for one, inspirtaion for one, 
+                motivativation for one and many more. This is an excting place for childrens school trips as they get to know about the past before stepping into the future.
+                Here serves an important role of inspiring young budding artist to hold onto their dreams and also help their talents to be recognized by providing a platform to showcase 
+                their art works which are curated by our Team of Reputed Curators from ArtMuse </p>
+            </center>
+        </div>
+        <br/><br/>
+        <div id="exhibit" class="container" style="padding-top:30px ;">
+            <h2>On Exhibit</h2>
+            <div class="row" style="padding-top: 20px;">
+                <div class="cardcol col-md-4">
+                    <div class="card">
+                        <img src="images/Gallery/collections/antique/birmingham-museums-trust-BPWZ01FtySg-unsplash.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Collections</h5>
+                        <p class="card-text">Explore the Antique Collections of Birmingham Museum</p>
+                    </div>
+                </div>
+                <div class="cardcol col-md-4">
+                    <div class="card">
+                        <img src="images/Gallery/artifacts/museum-rietberg-gec1ce01d6_1920.jpg" class="card-img-top"/>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Exhibitions</h5>
+                        <p class="card-text">Find out whats on display! Historic collections of India</p>
+                    </div>
+                </div>
+                <div class="cardcol col-md-4">
+                    <div class="card">
+                        <img src="images/Gallery/collections/painting/europeana-qi9jveT9X6A-unsplash.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Collections</h5>
+                        <p class="card-text">Refresh yourself by checking out these wonderful Paintings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="curators" class="container" style="padding-top:70px ; ">
+            <div class="text-center"></div>
+            <h2>Amuse Curators</h2>
+            <p>Team Amuse</p>
+
+            <div class="row" style="padding-top:30px ;padding-bottom: 50px;">
+                <div class="col-sm-6 col-md-3 d-block m-auto">
+                    <center>
+                    <figure class="curatorow figure">
+                        <img src="images/curators/c4_edward-cisneros-_H6wpor9mjs-unsplash.jpg" class="figure-img">
+                        <figcaption class="text-center">
+                            <h5>Xysmsmdja</h5>
+                            <p class="figure-caption">Exhibit Designer</p>
+                        </figcaption>
+                    </figure>
+                    </center>
+                </div>
+                <div class="col-sm-6 col-md-3 d-block m-auto">
+                    <center>
+                    <figure class="curatorow figure">
+                        <img src="images/curators/c3_manoj-kulkarni-WFGSa_dIJzE-unsplash (2).jpg" class="figure-img">
+                        <figcaption class="text-center">
+                            <h5>gsnonskndcmdja</h5>
+                            <p class="figure-caption">Historian</p>
+                        </figcaption>
+                    </figure>
+                    </center>
+                </div>
+                <div class="col-sm-6 col-md-3 d-block m-auto">
+                    <center>
+                    <figure class="curatorow figure">
+                        <img src="images/curators/c2_manoj-kulkarni-WFGSa_dIJzE-unsplash (1).jpg" class="figure-img">
+                        <figcaption class="text-center">
+                            <h5>sdscbdhkdbnu</h5>
+                            <p class="figure-caption">Lead Curator</p>
+                        </figcaption>
+                    </figure>
+                    </center>
+                </div>
+                <div class="col-sm-6 col-md-3 d-block m-auto">
+                    <center>
+                    <figure class="curatorow figure">
+                        <img src="images/curators/c1_linkedin-sales-solutions-VKJt1EZHlWs-unsplash.jpg" class="figure-img">
+                        <figcaption class="text-center">
+                            <h5>Xysmsmdja</h5>
+                            <p class="figure-caption">Archivist</p>
+                        </figcaption>
+                    </figure>
+                    </center>
+                </div>
+        </div>
+        <div class="enquire">
+            <form>
+                
+            </form>
+        </div>
+        <br/><br/>
+    </div>
+
+    <div class="footer">
+        <br/><br/>
+        <div class="quicklinks container-fluid row">
+            <div class="container text-center col-4">
+                <h6>Quick Links</h6>  
+                    <ul class="qlinks">  
+                        <li><a href="#aboutus">About Amuse</a></li>  
+                        <li><span style="text-decoration:none; color:rgba(254, 244, 230,0.4);">Exhibit</span></li>  
+                        <li><a href="#curators">Team Amuse</a></li>  
+                        <li><a href="collections.html">Collections</a> </li>
+                        <li><a href="artifacts.html">Artifacts</a> </li>
+                    </ul> 
+            </div>
+            <div class="footercontact cotainer text-center col-4">
+                <h5>Contact</h5>
+                <pre>
+16, Avinashi Rd,
+Civil Aerodrome Post,
+Coimbatore,
+Tamil Nadu 641014
+Ph +91 XXX23 91589
+                </pre>
+            </div>
+            <div class="footertime cotainer text-center col-4">
+                <h5>Open Hours</h5>
+                <pre>
+<span>Monday - Friday</span>
+9AM to 4PM
+<span>Saturday & Sunday</span>
+10AM to 4PM
+                </pre>
+            </div>
+        </div>
+        <br/>
+        <p class="text-center">Copyright &copy 2022, Design by Neha</p>
+        <br/>
+    </div>
+</body>
+</html>
